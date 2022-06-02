@@ -1,5 +1,7 @@
+
 *{
   padding: 0; margin: 0;
+  
  
 
 
@@ -14,19 +16,24 @@ li, a, button {
   
 
   .nav-links {
-   
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
 
 background-image:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6005ee23-9326-4cd5-8e0e-0f0416990930/ddr81th-606b93f0-571f-4c72-8e25-4643026dd6a3.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwMDVlZTIzLTkzMjYtNGNkNS04ZTBlLTBmMDQxNjk5MDkzMFwvZGRyODF0aC02MDZiOTNmMC01NzFmLTRjNzItOGUyNS00NjQzMDI2ZGQ2YTMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.S6qWhgjOrJxBtUX9K4_5VRQtGqyiDHGDOvailHb7_EY');
 background-size: auto;
 background-repeat: no-repeat;
-background-position: -2% 85%;
+background-position: -2% 75%;
 animation: left;
   }
   
   .nav-links li {
     display: inline-block;
-    padding: 10px 60px;
+   
+
   }
+
+
   
   .nav-links li a {
     transition: all 0.3s ease 0s;
@@ -52,4 +59,5 @@ animation: left;
     background-color: white;
     opacity: 0.8;
   }
+
 
