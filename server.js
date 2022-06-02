@@ -38,6 +38,7 @@ app.use(methodOverride("_method"));
 const userController = require('./controllers/users');
 app.use('/users', userController);
 
+app.get("/", (req, res) => res.redirect("/home"));
 //ROUTES
 
 
