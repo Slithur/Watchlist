@@ -85,8 +85,8 @@ font-size: 2em;
  }
 
  .name{
- 
-  font-size:2vw;
+ position: static;
+  font-size:2em;
   font-family:'Yanone Kaffeesatz';
   font-variation-settings:"wght" 400;
   letter-spacing:0.25vw;
