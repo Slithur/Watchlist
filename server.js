@@ -20,8 +20,9 @@ const Anime = require("./models/anime");
 
 //Database Connection 
 mongoose.connect(process.env.DATABASE_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+    useNewUrlParser: "true",
+    useUnifiedTopology: "true"
+    
 });
 // Database Connection Error/Success
 const db = mongoose.connection
