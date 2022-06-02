@@ -5,7 +5,6 @@ const app = express();
 const mongoose = require("mongoose");
 require("dotenv").config();
 const methodOverride = require("method-override");
-const mongoURI = process.env.MONGODB_URI
 const session = require('express-session');
 
 app.use(
@@ -40,7 +39,7 @@ const userController = require('./controllers/users');
 app.use('/users', userController);
 
 //ROUTES
-const PORT = 3000;
+
 
 
 // Routes / Controllers
@@ -129,7 +128,7 @@ app.get("/animes/:id/edit", (req, res) => {
 
 
 
-app.listen(PORT, () =>
-    console.log("jarvis is online" , PORT)
+app.listen(process.env.PORT, () =>
+    console.log("jarvis is online" ,)
 );
 
