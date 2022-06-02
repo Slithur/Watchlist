@@ -1,8 +1,9 @@
 //Require Dependencies
-require("dotenv").config();
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+require("dotenv").config();
 const methodOverride = require("method-override");
 
 const session = require('express-session');
@@ -11,7 +12,7 @@ app.use(
   session({
       secret: process.env.SECRET,
       resave: false,
-      saveUninitialized: false
+      saveUninitialized: false  
   }));
 
 //Import Model
@@ -27,6 +28,8 @@ const db = mongoose.connection
 db.on('error', (err) => console.log(err.message + ' is mongo not running?'));
 db.on('connected', () => console.log('mongo connected'));
 db.on('disconnected', () => console.log('mongo disconnected'));
+
+
 
 //MIDDLEWARE & BODY PARSER
 app.use(express.static(__dirname + '/public'));
