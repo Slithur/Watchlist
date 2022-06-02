@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/app.css" />
-    <link rel="stylesheet" href="./homestyle.css">
+    <link rel="stylesheet" href="/css/app.css" defer/>
+    <link rel="stylesheet" href="./homestyle.css" defer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer ></script>
     <%- include('../partials/navbar.ejs', {pageName: 'Edit Review'}) %>
     <title>home Page</title>
+
     <script>
+
+        window.onload = function() {
+        newAnime();
+        };
+
+        function newAnime(){
             const URL = "https://animechan.vercel.app/api/quotes";
             $.ajax(URL).then(function (response) {
                     console.log('Quote data is ready')
@@ -28,12 +35,14 @@
                     console.log('something is wrong')
                     console.log(error)
                 })
-                
+        }        
     </script>
 </head>
 <body>
+    <style>p {text-align: center;}</style>
     <p id = 'name'> </p>
     <p id ='quote'> </p>
  
 </body>
+
 </html>
