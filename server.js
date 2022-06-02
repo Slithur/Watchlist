@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require("mongoose");
 require("dotenv").config();
 const methodOverride = require("method-override");
-
+const mongoURI = process.env.MONGODB_URI
 const session = require('express-session');
 
 app.use(
