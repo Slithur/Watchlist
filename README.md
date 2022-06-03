@@ -19,6 +19,8 @@ I have songs stored locally where the songs play and the user guesses the song. 
 
 ### Screenshots
 ![website](https://i.imgur.com/GsUYIlw.jpg)
+![website](https://i.imgur.com/1Oi3JyZ.png)
+![website](https://i.imgur.com/31pVuXA.png)
 
 
 
