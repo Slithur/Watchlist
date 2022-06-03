@@ -31,3 +31,4 @@ LINK TO MY WEBSITE https://watchlizzzt.herokuapp.com/home
 ### Future Features
 
 Add comments
+Let users make profiles
