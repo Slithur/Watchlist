@@ -1,6 +1,6 @@
 # Watchlist
 
-I have songs stored locally where the songs play and the user guesses the song. My API gets quotes from the shows that the songs originate from when the user guesses right that quote is shown I used html,javascript,css and javascript libraries
+my project was making a crud app where people can add there favorite shows and other people can comment on them
 
 
 ## Technologies Used
