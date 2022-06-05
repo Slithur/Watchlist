@@ -1,6 +1,6 @@
 # Watchlist
 
-my project was making a crud app where people can add there favorite shows and other people can see them
+my project was making a crud app where people can add there favorite shows and other people can see them.
 
 
 ## Technologies Used
